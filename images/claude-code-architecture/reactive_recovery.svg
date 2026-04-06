@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #1e1e1e; }
+      .text-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 24px; font-weight: bold; fill: #d97757; }
+      .text-box { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 16px; font-weight: bold; fill: #ffffff; }
+      .text-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; fill: #aaaaaa; }
+      .text-error { font-family: monospace; font-size: 16px; font-weight: bold; fill: #e74c3c; }
+      
+      .box { fill: #2a2a2a; stroke: #3a3a3a; stroke-width: 2; rx: 8; }
+      .box-success { fill: #1e4620; stroke: #2ecc71; stroke-width: 2; rx: 8; }
+      .box-fail { fill: #4a1515; stroke: #e74c3c; stroke-width: 2; rx: 8; }
+      
+      .arrow-line { stroke: #555; stroke-width: 2; }
+      .path-line { stroke: #555; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow-down" viewBox="0 0 10 10" refX="5" refY="10" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 0 L 5 10 z" fill="#555" />
+    </marker>
+    <marker id="arrow-right" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 0 10 L 10 5 z" fill="#555" />
+    </marker>
+  </defs>
+
+  <rect width="800" height="600" class="bg" rx="16" ry="16"/>
+  <text x="400" y="50" text-anchor="middle" class="text-title">响应式恢复机制与安全熔断 (Reactive Recovery)</text>
+
+  <!-- Error Node -->
+  <rect x="250" y="90" width="300" height="40" class="box" style="stroke: #e74c3c;" />
+  <text x="400" y="115" text-anchor="middle" class="text-error">API Error: prompt-too-long</text>
+  
+  <line x1="400" y1="130" x2="400" y2="155" class="arrow-line" marker-end="url(#arrow-down)"/>
+
+  <!-- Withhold Shield -->
+  <rect x="250" y="160" width="300" height="60" class="box" />
+  <text x="400" y="185" text-anchor="middle" class="text-box">扣留机制 (Withhold Shield)</text>
+  <text x="400" y="205" text-anchor="middle" class="text-desc">拦截错误，对用户 UI 隐形</text>
+
+  <line x1="400" y1="220" x2="400" y2="245" class="arrow-line" marker-end="url(#arrow-down)"/>
+
+  <!-- Auto Compact -->
+  <rect x="250" y="250" width="300" height="60" class="box" />
+  <text x="400" y="275" text-anchor="middle" class="text-box">Auto Compact</text>
+  <text x="400" y="295" text-anchor="middle" class="text-desc">触发终极上下文压缩</text>
+
+  <line x1="400" y1="310" x2="400" y2="340" class="arrow-line" />
+  <line x1="250" y1="340" x2="550" y2="340" class="arrow-line" />
+  
+  <line x1="250" y1="340" x2="250" y2="365" class="arrow-line" marker-end="url(#arrow-down)"/>
+  <line x1="550" y1="340" x2="550" y2="365" class="arrow-line" marker-end="url(#arrow-down)"/>
+
+  <!-- Path A: Success -->
+  <rect x="150" y="370" width="200" height="60" class="box-success" />
+  <text x="250" y="395" text-anchor="middle" class="text-box">A. 压缩成功</text>
+  <text x="250" y="415" text-anchor="middle" class="text-desc">无缝重新注入主循环</text>
+  
+  <!-- Path B: Fail -->
+  <rect x="450" y="370" width="200" height="60" class="box-fail" />
+  <text x="550" y="395" text-anchor="middle" class="text-box">B. 压缩失败</text>
+  <text x="550" y="415" text-anchor="middle" class="text-desc">触发熔断计数器 (X / 3)</text>
+  
+  <line x1="550" y1="430" x2="550" y2="465" class="arrow-line" marker-end="url(#arrow-down)"/>
+  
+  <rect x="450" y="470" width="200" height="60" class="box-fail" style="stroke-dasharray: 4 4;" />
+  <text x="550" y="495" text-anchor="middle" class="text-box">连续 3 次失败</text>
+  <text x="550" y="515" text-anchor="middle" class="text-desc">错误最终向用户暴露</text>
+  
+  <!-- Loop back arrow -->
+  <path d="M 150 400 C 50 400, 50 110, 240 110" class="path-line" marker-end="url(#arrow-right)"/>
+
+</svg>

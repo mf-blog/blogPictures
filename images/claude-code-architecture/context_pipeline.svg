@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #1e1e1e; }
+      .text-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 24px; font-weight: bold; fill: #d97757; }
+      .text-box { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 16px; font-weight: bold; fill: #ffffff; }
+      .text-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; fill: #aaaaaa; }
+      .text-cost { font-family: monospace; font-size: 13px; fill: #e74c3c; }
+      
+      .box { fill: #2a2a2a; stroke: #3a3a3a; stroke-width: 2; rx: 8; }
+      .arrow-line { stroke: #555; stroke-width: 3; }
+    </style>
+    <marker id="arrow-down" viewBox="0 0 10 10" refX="5" refY="10" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 0 L 5 10 z" fill="#555" />
+    </marker>
+  </defs>
+
+  <rect width="800" height="600" class="bg" rx="16" ry="16"/>
+  <text x="400" y="50" text-anchor="middle" class="text-title">5 层上下文压缩管道 (Context Compression Pipeline)</text>
+
+  <!-- Level 1 -->
+  <rect x="250" y="90" width="300" height="60" class="box" />
+  <text x="400" y="115" text-anchor="middle" class="text-box">1. Tool Result Budget</text>
+  <text x="400" y="135" text-anchor="middle" class="text-desc">单次结果截断，拦截巨型文件读取</text>
+  <text x="570" y="125" text-anchor="start" class="text-cost">Cost: 磁盘 I/O 浪费</text>
+  
+  <line x1="400" y1="150" x2="400" y2="175" class="arrow-line" marker-end="url(#arrow-down)"/>
+
+  <!-- Level 2 -->
+  <rect x="250" y="180" width="300" height="60" class="box" />
+  <text x="400" y="205" text-anchor="middle" class="text-box">2. Snip Compact</text>
+  <text x="400" y="225" text-anchor="middle" class="text-desc">历史尾部裁剪，移除最老的多余轮次</text>
+  <text x="570" y="215" text-anchor="start" class="text-cost">Cost: 丢失旧对话</text>
+
+  <line x1="400" y1="240" x2="400" y2="265" class="arrow-line" marker-end="url(#arrow-down)"/>
+
+  <!-- Level 3 -->
+  <rect x="250" y="270" width="300" height="60" class="box" />
+  <text x="400" y="295" text-anchor="middle" class="text-box">3. Microcompact</text>
+  <text x="400" y="315" text-anchor="middle" class="text-desc">精细缓存优化，压缩冗余 Prompt</text>
+  <text x="570" y="305" text-anchor="start" class="text-cost">Cost: 极微小信息损失</text>
+
+  <line x1="400" y1="330" x2="400" y2="355" class="arrow-line" marker-end="url(#arrow-down)"/>
+
+  <!-- Level 4 -->
+  <rect x="250" y="360" width="300" height="60" class="box" />
+  <text x="400" y="385" text-anchor="middle" class="text-box">4. Context Collapse</text>
+  <text x="400" y="405" text-anchor="middle" class="text-desc">渐进式折叠，将中间交互折叠为摘要</text>
+  <text x="570" y="395" text-anchor="start" class="text-cost">Cost: 摘要质量下降</text>
+
+  <line x1="400" y1="420" x2="400" y2="445" class="arrow-line" marker-end="url(#arrow-down)"/>
+
+  <!-- Level 5 -->
+  <rect x="250" y="450" width="300" height="60" class="box" style="stroke: #d97757; stroke-width: 2;"/>
+  <text x="400" y="475" text-anchor="middle" class="text-box" fill="#d97757">5. Auto Compact</text>
+  <text x="400" y="495" text-anchor="middle" class="text-desc">终极全局压缩，Fork 独立 Agent 处理</text>
+  <text x="570" y="485" text-anchor="start" class="text-cost">Cost: 昂贵的 API 调用</text>
+
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #1e1e1e; }
+      .text-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 24px; font-weight: bold; fill: #d97757; }
+      .text-box { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; font-weight: bold; fill: #ffffff; }
+      .text-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; fill: #aaaaaa; }
+      
+      .box-layer1 { fill: #2a2a2a; stroke: #555; stroke-width: 2; rx: 8; }
+      .box-layer2 { fill: #2d2624; stroke: #d97757; stroke-width: 2; rx: 8; }
+      .box-layer3 { fill: #1a1a1a; stroke: #e74c3c; stroke-width: 2; rx: 8; }
+    </style>
+  </defs>
+
+  <rect width="800" height="500" class="bg" rx="16" ry="16"/>
+  <text x="400" y="50" text-anchor="middle" class="text-title">安全性：三层纵深防御架构 (Defense in Depth)</text>
+
+  <!-- Layer 1 -->
+  <rect x="100" y="100" width="600" height="360" class="box-layer1" />
+  <text x="400" y="130" text-anchor="middle" class="text-box">外层 - Layer 1: 静态规则层</text>
+  <text x="400" y="155" text-anchor="middle" class="text-desc">匹配 policySettings 与 Glob patterns (快速放行或拦截 ~80% 请求)</text>
+
+  <!-- Layer 2 -->
+  <rect x="150" y="190" width="500" height="240" class="box-layer2" />
+  <text x="400" y="225" text-anchor="middle" class="text-box">中层 - Layer 2: 工具专属深度校验</text>
+  <text x="400" y="250" text-anchor="middle" class="text-desc">Tree-sitter AST 解析 · 限制 50 子命令 · 阻断 UNC 路径防凭据泄露</text>
+
+  <!-- Layer 3 -->
+  <rect x="200" y="290" width="400" height="110" class="box-layer3" />
+  <text x="400" y="330" text-anchor="middle" class="text-box" style="fill: #e74c3c;">核心 - Layer 3: 轻量级 LLM 分类器</text>
+  <text x="400" y="360" text-anchor="middle" class="text-desc">Auto 模式下二次模型评分，危险则阻断并弹出确认 UI</text>
+
+</svg>

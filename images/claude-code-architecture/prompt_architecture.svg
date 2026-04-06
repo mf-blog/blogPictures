@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #1e1e1e; }
+      .text-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 24px; font-weight: bold; fill: #d97757; }
+      .text-box { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; font-weight: bold; fill: #ffffff; }
+      .text-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; fill: #aaaaaa; }
+      .text-highlight { font-family: monospace; font-size: 14px; fill: #2ecc71; }
+      
+      .box-static { fill: #2d2624; stroke: #d97757; stroke-width: 2; rx: 8; }
+      .box-dynamic { fill: #2a2a2a; stroke: #3a3a3a; stroke-width: 2; rx: 8; }
+      
+      .line { stroke: #555; stroke-width: 2; stroke-dasharray: 4 4; }
+    </style>
+  </defs>
+
+  <rect width="800" height="450" class="bg" rx="16" ry="16"/>
+  <text x="400" y="50" text-anchor="middle" class="text-title">缓存友好的双层 Prompt 架构</text>
+
+  <!-- Static/Cached Region -->
+  <rect x="150" y="90" width="500" height="120" class="box-static" />
+  <text x="400" y="130" text-anchor="middle" class="text-box">静态缓存区 (Static/Cached)</text>
+  <text x="400" y="160" text-anchor="middle" class="text-desc">系统指令 · 全局规则 · 工具描述</text>
+  <text x="400" y="185" text-anchor="middle" class="text-highlight">高缓存命中率 (Cache Hit ~80%)</text>
+  
+  <!-- Boundary -->
+  <line x1="100" y1="230" x2="600" y2="230" class="line" />
+  <text x="610" y="235" text-anchor="start" class="text-desc">SYSTEM_PROMPT_DYNAMIC_BOUNDARY</text>
+  
+  <!-- Latch Anti-bounce mechanism -->
+  <rect x="420" y="215" width="160" height="30" fill="#333" rx="15" />
+  <text x="500" y="235" text-anchor="middle" class="text-desc" style="fill:#e0e0e0; font-size:12px;">🔒 锁存器防抖 (Latch)</text>
+
+  <!-- Dynamic Region -->
+  <rect x="150" y="250" width="500" height="120" class="box-dynamic" />
+  <text x="400" y="290" text-anchor="middle" class="text-box">动态交互区 (Dynamic/Turn-based)</text>
+  <text x="400" y="320" text-anchor="middle" class="text-desc">当前文件状态 · 临时变量 · 轮次对话上下文</text>
+  <text x="400" y="345" text-anchor="middle" class="text-desc" style="fill: #e74c3c;">无缓存，每轮更新</text>
+
+</svg>
