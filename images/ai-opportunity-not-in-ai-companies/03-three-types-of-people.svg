@@ -1,0 +1,82 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="60" x2="1480" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCFAF5"/>
+      <stop offset="1" stop-color="#EEE6D8"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 52px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill:#1F2B36; }
+      .cardTitle { font: 700 30px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .cardText { font: 500 19px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .big { font: 700 28px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="120" y="112" class="title">AI 时代只剩三种人</text>
+
+  <rect x="112" y="186" width="404" height="572" rx="28" fill="#EFF7FE" stroke="#BCD8F2" stroke-width="4"/>
+  <rect x="598" y="186" width="404" height="572" rx="28" fill="#FFF4E8" stroke="#F0D1AB" stroke-width="4"/>
+  <rect x="1084" y="166" width="404" height="612" rx="32" fill="#F8F7EE" stroke="#D6C690" stroke-width="6"/>
+
+  <g transform="translate(176 248)">
+    <text x="0" y="0" class="cardTitle" fill="#224666">懂 AI</text>
+    <text x="0" y="38" class="cardTitle" fill="#5C7FA0">不懂行业</text>
+    <circle cx="128" cy="152" r="32" fill="#20435C"/>
+    <path d="M82 260C82 212 103 182 128 182C153 182 174 212 174 260V322H82V260Z" fill="#5BAEE3"/>
+    <rect x="188" y="94" width="154" height="96" rx="16" fill="#FFFFFF" stroke="#7ABCE8" stroke-width="4"/>
+    <rect x="210" y="118" width="72" height="10" rx="5" fill="#5BAEE3"/>
+    <rect x="210" y="140" width="104" height="10" rx="5" fill="#8BC8EF"/>
+    <rect x="210" y="162" width="82" height="10" rx="5" fill="#8BC8EF"/>
+    <circle cx="242" cy="266" r="18" fill="#5BAEE3"/>
+    <circle cx="294" cy="236" r="14" fill="#8BC8EF"/>
+    <circle cx="320" cy="288" r="12" fill="#5BAEE3"/>
+    <path d="M242 266L294 236L320 288" stroke="#5BAEE3" stroke-width="4"/>
+    <text x="0" y="404" class="cardText" fill="#506577">会做 Demo</text>
+    <text x="0" y="438" class="cardText" fill="#506577">会讲模型能力</text>
+    <text x="0" y="472" class="cardText" fill="#506577">但不知道钱卡在哪一环</text>
+  </g>
+
+  <g transform="translate(662 248)">
+    <text x="0" y="0" class="cardTitle" fill="#8C5724">懂行业</text>
+    <text x="0" y="38" class="cardTitle" fill="#C17A35">不懂 AI</text>
+    <circle cx="128" cy="152" r="32" fill="#6B4B31"/>
+    <path d="M82 260C82 212 103 182 128 182C153 182 174 212 174 260V322H82V260Z" fill="#D5904B"/>
+    <rect x="202" y="94" width="130" height="96" rx="16" fill="#7A573B"/>
+    <rect x="228" y="118" width="78" height="12" rx="6" fill="#F3D6B2"/>
+    <rect x="228" y="144" width="78" height="12" rx="6" fill="#F3D6B2"/>
+    <rect x="228" y="170" width="78" height="12" rx="6" fill="#F3D6B2"/>
+    <rect x="220" y="254" width="118" height="58" rx="12" fill="#F7E7D5"/>
+    <text x="246" y="292" class="big" fill="#8C5724">?</text>
+    <text x="0" y="404" class="cardText" fill="#6C5A4A">知道流程问题</text>
+    <text x="0" y="438" class="cardText" fill="#6C5A4A">知道成本堆在哪里</text>
+    <text x="0" y="472" class="cardText" fill="#6C5A4A">但不知道怎么重构</text>
+  </g>
+
+  <g transform="translate(1148 228)">
+    <text x="0" y="0" class="cardTitle" fill="#3A4B1F">两个都懂</text>
+    <text x="0" y="38" class="cardTitle" fill="#8A732E">才是真机会</text>
+    <circle cx="142" cy="154" r="36" fill="#223447"/>
+    <path d="M88 274C88 220 111 188 142 188C173 188 196 220 196 274V344H88V274Z" fill="#D9AB52"/>
+    <rect x="24" y="110" width="98" height="118" rx="16" fill="#203F59" stroke="#7FC8F0" stroke-width="4"/>
+    <rect x="46" y="138" width="54" height="8" rx="4" fill="#F3D79D"/>
+    <rect x="46" y="158" width="54" height="8" rx="4" fill="#F3D79D"/>
+    <rect x="46" y="178" width="54" height="8" rx="4" fill="#F3D79D"/>
+    <rect x="214" y="110" width="110" height="124" rx="16" fill="#FFF4E3" stroke="#A16C34" stroke-width="4"/>
+    <rect x="238" y="142" width="62" height="10" rx="5" fill="#A16C34"/>
+    <rect x="238" y="166" width="62" height="10" rx="5" fill="#D59A56"/>
+    <rect x="238" y="190" width="62" height="10" rx="5" fill="#D59A56"/>
+    <path d="M122 272H162" stroke="#FFF0C8" stroke-width="8" stroke-linecap="round"/>
+    <path d="M142 252V292" stroke="#FFF0C8" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="58" cy="386" r="18" fill="#7FC8F0"/>
+    <circle cx="142" cy="408" r="18" fill="#D9AB52"/>
+    <circle cx="226" cy="386" r="18" fill="#A16C34"/>
+    <path d="M58 386H226" stroke="#50604C" stroke-width="8" stroke-linecap="round"/>
+    <path d="M142 408V468" stroke="#50604C" stroke-width="8" stroke-linecap="round"/>
+    <text x="0" y="520" class="cardText" fill="#4E5236">既看得懂模型能力</text>
+    <text x="0" y="554" class="cardText" fill="#4E5236">也看得懂行业痛点</text>
+    <text x="0" y="588" class="cardText" fill="#4E5236">能直接改写价值链</text>
+  </g>
+
+  <text x="1118" y="806" class="cardText" fill="#6D684B">能同时听懂两边语言的人，会直接把前两种人甩在后面。</text>
+</svg>
