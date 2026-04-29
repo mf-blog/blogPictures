@@ -1,0 +1,105 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="80" x2="1440" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101726"/>
+      <stop offset="1" stop-color="#18253B"/>
+    </linearGradient>
+    <linearGradient id="river" x1="800" y1="320" x2="800" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102B48"/>
+      <stop offset="1" stop-color="#0A1830"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="740" y1="300" x2="860" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD48A"/>
+      <stop offset="1" stop-color="#F29A38"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .label {
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+      .small {
+        font-size: 26px;
+        fill: #D8E4F2;
+      }
+      .muted {
+        font-size: 18px;
+        fill: #8BA3BD;
+      }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1240" cy="110" r="240" fill="#1F3354" opacity="0.25"/>
+  <circle cx="310" cy="150" r="180" fill="#12304A" opacity="0.18"/>
+
+  <path d="M0 470C168 418 316 430 500 486C656 532 758 602 903 618C1050 634 1225 581 1394 556C1502 540 1575 548 1600 556V900H0V470Z" fill="#111C2D"/>
+  <path d="M0 586C156 534 318 566 514 644C655 700 766 743 900 750C1076 759 1266 690 1424 650C1511 628 1578 620 1600 620V900H0V586Z" fill="url(#river)"/>
+
+  <path d="M0 470C180 420 332 428 522 488C591 510 647 538 702 560L669 604C598 575 535 544 449 519C302 478 173 468 0 511V470Z" fill="#213957"/>
+  <path d="M931 618C1072 631 1230 583 1401 558C1505 542 1576 548 1600 556V595C1567 585 1500 583 1411 597C1270 620 1117 671 960 682L931 618Z" fill="#43362A"/>
+
+  <g opacity="0.95">
+    <rect x="160" y="252" width="220" height="132" rx="18" fill="#143C63" stroke="#2B7CC5" stroke-width="4"/>
+    <rect x="188" y="284" width="74" height="10" rx="5" fill="#7FD7FF"/>
+    <rect x="188" y="310" width="146" height="12" rx="6" fill="#99C8F4" opacity="0.8"/>
+    <rect x="188" y="336" width="122" height="12" rx="6" fill="#6DB8F0" opacity="0.7"/>
+    <rect x="408" y="224" width="104" height="148" rx="16" fill="#102F4A" stroke="#4BB2FF" stroke-width="4"/>
+    <circle cx="460" cy="276" r="22" fill="#7FE0FF"/>
+    <path d="M439 320H481" stroke="#A8E9FF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M460 300V340" stroke="#A8E9FF" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="572" cy="210" r="14" fill="#62C6FF"/>
+    <circle cx="615" cy="252" r="10" fill="#4B9EE0"/>
+    <circle cx="640" cy="196" r="8" fill="#8CDFFF"/>
+    <path d="M572 210L615 252L640 196" stroke="#63BDFD" stroke-width="4"/>
+  </g>
+
+  <g opacity="0.98">
+    <rect x="1114" y="258" width="240" height="132" rx="18" fill="#2F241D" stroke="#F0A256" stroke-width="4"/>
+    <rect x="1146" y="290" width="70" height="70" rx="8" fill="#C28142"/>
+    <rect x="1228" y="290" width="90" height="16" rx="8" fill="#FFD7A8"/>
+    <rect x="1228" y="320" width="74" height="16" rx="8" fill="#F3BD80"/>
+    <rect x="1228" y="350" width="96" height="16" rx="8" fill="#D89554"/>
+    <rect x="996" y="228" width="88" height="166" rx="16" fill="#3A2D24" stroke="#F4BA72" stroke-width="4"/>
+    <rect x="1017" y="258" width="46" height="46" rx="6" fill="#D99A53"/>
+    <rect x="1017" y="322" width="46" height="18" rx="6" fill="#F5D3A8"/>
+    <rect x="1017" y="352" width="46" height="18" rx="6" fill="#B7753C"/>
+    <circle cx="1396" cy="392" r="18" fill="#F0A256"/>
+    <circle cx="1448" cy="392" r="18" fill="#F0A256"/>
+    <path d="M1368 348H1460V380H1368Z" fill="#503A2A"/>
+    <path d="M1414 326V348" stroke="#F0A256" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <path d="M773 410C796 372 818 348 839 338C855 330 872 337 877 356C883 379 867 404 867 437V552C867 577 855 600 835 622L808 653L770 645L732 612C713 592 703 567 703 545V465C703 439 718 414 741 401C752 395 763 398 773 410Z" fill="url(#gold)"/>
+    <circle cx="787" cy="316" r="36" fill="#FFD48A"/>
+    <path d="M750 637L723 722H759L786 662L813 722H851L821 636" fill="#FFD48A"/>
+  </g>
+
+  <path d="M700 642C682 650 667 664 650 687L607 744" stroke="#7AA0BF" stroke-width="14" stroke-linecap="round"/>
+  <path d="M878 637C894 651 908 668 924 692L965 748" stroke="#7AA0BF" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="610" cy="746" r="19" fill="#A0B3C6"/>
+  <circle cx="968" cy="750" r="19" fill="#A0B3C6"/>
+
+  <g opacity="0.78">
+    <path d="M766 465L804 470L835 455" stroke="#FFF3D7" stroke-width="7" stroke-linecap="round"/>
+    <rect x="728" y="456" width="80" height="98" rx="10" fill="#20344E" stroke="#F8CF89" stroke-width="4"/>
+    <rect x="747" y="478" width="42" height="8" rx="4" fill="#F8CF89"/>
+    <rect x="747" y="497" width="42" height="8" rx="4" fill="#F8CF89" opacity="0.75"/>
+    <rect x="816" y="458" width="58" height="92" rx="10" fill="#2C241F" stroke="#F8CF89" stroke-width="4"/>
+    <rect x="832" y="478" width="26" height="8" rx="4" fill="#F8CF89"/>
+    <rect x="832" y="498" width="26" height="8" rx="4" fill="#F8CF89" opacity="0.75"/>
+  </g>
+
+  <text x="176" y="160" class="label small">AI 世界</text>
+  <text x="1126" y="162" class="label small">传统行业</text>
+  <text x="176" y="196" class="label muted">模型、原型、Demo 很亮</text>
+  <text x="1126" y="198" class="label muted">利润、流程、客户很重</text>
+</svg>
