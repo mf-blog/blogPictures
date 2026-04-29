@@ -1,0 +1,66 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1480" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBF8F1"/>
+      <stop offset="1" stop-color="#F0EADF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 52px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill:#1F2B36; }
+      .tag { font: 700 26px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .note { font: 500 20px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill:#5E6C7C; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="120" y="112" class="title">给马车装方向盘，不叫重构</text>
+
+  <rect x="98" y="180" width="620" height="560" rx="32" fill="#F8F1E7" stroke="#DCCDB8" stroke-width="4"/>
+  <rect x="882" y="180" width="620" height="560" rx="32" fill="#F5F8F3" stroke="#C8D7CB" stroke-width="4"/>
+
+  <rect x="136" y="214" width="90" height="40" rx="20" fill="#F3BC72"/>
+  <text x="164" y="242" class="tag" fill="#5F3B13">缝补</text>
+
+  <rect x="920" y="214" width="90" height="40" rx="20" fill="#7DB58A"/>
+  <text x="948" y="242" class="tag" fill="#163E1F">重构</text>
+
+  <g transform="translate(164 320)">
+    <circle cx="116" cy="252" r="58" fill="#5A4637"/>
+    <circle cx="364" cy="252" r="58" fill="#5A4637"/>
+    <path d="M116 252H364" stroke="#5A4637" stroke-width="28" stroke-linecap="round"/>
+    <path d="M146 142H326V236H146Z" fill="#7E614A"/>
+    <path d="M146 142C178 96 236 78 300 88C340 94 374 110 408 142H146Z" fill="#8F6B4A"/>
+    <rect x="274" y="96" width="120" height="84" rx="14" fill="#EAF5FF" stroke="#4B9FDE" stroke-width="4" transform="rotate(8 274 96)"/>
+    <rect x="294" y="122" width="64" height="10" rx="5" fill="#4B9FDE" transform="rotate(8 294 122)"/>
+    <rect x="294" y="144" width="42" height="10" rx="5" fill="#83C5EE" transform="rotate(8 294 144)"/>
+    <circle cx="414" cy="112" r="34" fill="#FFDAA6"/>
+    <path d="M395 112H433" stroke="#6A4C2C" stroke-width="6" stroke-linecap="round"/>
+    <path d="M414 93V131" stroke="#6A4C2C" stroke-width="6" stroke-linecap="round"/>
+    <path d="M64 60H212" stroke="#B58556" stroke-width="14" stroke-linecap="round"/>
+    <path d="M96 24H184" stroke="#D2A16D" stroke-width="14" stroke-linecap="round"/>
+    <path d="M0 330C44 302 82 290 136 292C183 294 220 316 271 320C320 325 356 306 410 288" stroke="#D7C7B2" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(954 286)">
+    <rect x="0" y="172" width="158" height="92" rx="20" fill="#15384A"/>
+    <text x="34" y="228" class="tag" fill="#DDF4FF">客户需求</text>
+    <rect x="216" y="76" width="158" height="92" rx="20" fill="#204B5C"/>
+    <text x="250" y="132" class="tag" fill="#E1F7EE">流程设计</text>
+    <rect x="432" y="172" width="158" height="92" rx="20" fill="#2F6B63"/>
+    <text x="466" y="228" class="tag" fill="#E8FFF4">AI 引擎</text>
+    <rect x="216" y="268" width="158" height="92" rx="20" fill="#C9894D"/>
+    <text x="250" y="324" class="tag" fill="#FFF6EA">交付增长</text>
+    <path d="M158 218H216" stroke="#294A38" stroke-width="12" stroke-linecap="round"/>
+    <path d="M374 122H432" stroke="#294A38" stroke-width="12" stroke-linecap="round"/>
+    <path d="M511 264V312H374" stroke="#294A38" stroke-width="12" stroke-linecap="round"/>
+    <path d="M295 168V268" stroke="#294A38" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="295" cy="442" r="40" fill="#F2BE7E"/>
+    <circle cx="295" cy="382" r="28" fill="#16384B"/>
+    <path d="M239 506L272 442H318L350 506" stroke="#16384B" stroke-width="14" stroke-linecap="round"/>
+    <rect x="344" y="420" width="166" height="92" rx="16" fill="#FFF7E7" stroke="#203E47" stroke-width="4"/>
+    <rect x="370" y="446" width="116" height="12" rx="6" fill="#203E47"/>
+    <rect x="370" y="472" width="84" height="12" rx="6" fill="#6A8A85"/>
+  </g>
+
+  <text x="150" y="786" class="note">表面加一个 AI 客服、一个聊天框、一个小程序，只是在老系统上缝缝补补。</text>
+  <text x="920" y="786" class="note">真正的机会，是把客户、流程、交付和 AI 一起重新设计成新的价值链。</text>
+</svg>
