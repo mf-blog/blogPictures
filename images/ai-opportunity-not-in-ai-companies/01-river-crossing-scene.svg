@@ -1,0 +1,80 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1520" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6F3EA"/>
+      <stop offset="1" stop-color="#E5E0D4"/>
+    </linearGradient>
+    <linearGradient id="river" x1="792" y1="240" x2="814" y2="844" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B8EC0"/>
+      <stop offset="1" stop-color="#274A73"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 52px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill:#1F2B36; }
+      .label { font: 700 30px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill:#1F2B36; }
+      .note { font: 500 20px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill:#5E6C7C; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="120" y="112" class="title">两拨人隔着河喊话，机会却在对岸</text>
+
+  <path d="M0 540C228 484 387 498 587 558C726 600 788 674 924 702C1108 740 1281 665 1449 622C1524 603 1578 592 1600 590V900H0V540Z" fill="#CBBCA2"/>
+  <path d="M0 640C190 606 377 626 542 696C682 756 804 812 934 814C1108 816 1267 741 1417 700C1508 675 1576 668 1600 668V900H0V640Z" fill="url(#river)"/>
+
+  <path d="M0 540C213 490 395 504 601 567C694 595 750 623 785 643L735 692C684 662 625 633 536 606C357 551 204 545 0 586V540Z" fill="#B7D4EB"/>
+  <path d="M944 704C1126 739 1290 664 1458 620C1530 602 1581 594 1600 590V632C1570 625 1515 626 1436 646C1313 678 1180 727 1024 746L944 704Z" fill="#D29B67"/>
+
+  <g transform="translate(120 212)">
+    <text x="0" y="0" class="label">AI 圈</text>
+    <text x="0" y="34" class="note">找场景，做 Demo，讲能力</text>
+    <rect x="12" y="74" width="210" height="116" rx="16" fill="#E8F5FF" stroke="#4D9EDC" stroke-width="4"/>
+    <rect x="42" y="102" width="72" height="12" rx="6" fill="#4D9EDC"/>
+    <rect x="42" y="128" width="126" height="12" rx="6" fill="#86C4F0"/>
+    <rect x="42" y="154" width="102" height="12" rx="6" fill="#86C4F0"/>
+    <circle cx="282" cy="114" r="18" fill="#5DB9EC"/>
+    <circle cx="338" cy="136" r="13" fill="#86C4F0"/>
+    <circle cx="314" cy="188" r="10" fill="#4D9EDC"/>
+    <path d="M282 114L338 136L314 188" stroke="#5DB9EC" stroke-width="4"/>
+    <path d="M160 228C140 230 122 248 118 272C112 304 132 332 162 340C192 348 225 329 232 297" stroke="#223447" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="214" cy="266" r="28" fill="#223447"/>
+    <path d="M272 246C255 249 243 262 240 278C235 303 251 327 275 333C300 340 323 325 330 303" stroke="#223447" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="310" cy="284" r="28" fill="#223447"/>
+  </g>
+
+  <g transform="translate(1080 208)">
+    <text x="0" y="0" class="label">传统行业</text>
+    <text x="0" y="34" class="note">看成本，盯利润，守流程</text>
+    <rect x="0" y="80" width="250" height="124" rx="16" fill="#FFF1E3" stroke="#D88B46" stroke-width="4"/>
+    <rect x="28" y="110" width="72" height="72" rx="8" fill="#D88B46"/>
+    <rect x="116" y="108" width="94" height="16" rx="8" fill="#F1BB84"/>
+    <rect x="116" y="138" width="76" height="16" rx="8" fill="#F1BB84"/>
+    <rect x="116" y="168" width="100" height="16" rx="8" fill="#C97731"/>
+    <path d="M22 252H128V304H22Z" fill="#714C31"/>
+    <circle cx="48" cy="308" r="16" fill="#D88B46"/>
+    <circle cx="112" cy="308" r="16" fill="#D88B46"/>
+    <rect x="196" y="234" width="82" height="112" rx="10" fill="#7C593C"/>
+    <rect x="212" y="258" width="50" height="10" rx="5" fill="#F8DAB5"/>
+    <rect x="212" y="284" width="50" height="10" rx="5" fill="#F8DAB5"/>
+    <rect x="212" y="310" width="50" height="10" rx="5" fill="#F8DAB5"/>
+  </g>
+
+  <g transform="translate(690 318)">
+    <path d="M100 24C117 -6 141 -16 157 0C173 17 173 54 173 81V188C173 217 162 245 144 268L113 306H87L56 269C38 246 27 219 27 190V88C27 55 28 22 49 4C62 -7 79 -2 100 24Z" fill="#F3A843"/>
+    <circle cx="100" cy="-10" r="34" fill="#F8CF89"/>
+    <path d="M63 287L38 374H74L100 315L126 374H162L137 286" fill="#1E3149"/>
+    <path d="M52 98H100H148" stroke="#FFF5DE" stroke-width="8" stroke-linecap="round"/>
+    <rect x="44" y="110" width="64" height="84" rx="10" fill="#223447"/>
+    <rect x="57" y="129" width="38" height="8" rx="4" fill="#F8CF89"/>
+    <rect x="57" y="149" width="38" height="8" rx="4" fill="#F8CF89"/>
+    <rect x="116" y="110" width="52" height="84" rx="10" fill="#FFF5DE" stroke="#1E3149" stroke-width="4"/>
+    <rect x="129" y="130" width="24" height="6" rx="3" fill="#1E3149"/>
+    <rect x="129" y="146" width="24" height="6" rx="3" fill="#1E3149"/>
+  </g>
+
+  <path d="M756 616C716 632 674 667 632 714" stroke="#1E3149" stroke-width="12" stroke-linecap="round"/>
+  <path d="M846 618C883 638 918 668 958 716" stroke="#1E3149" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="628" cy="716" r="18" fill="#8798A7"/>
+  <circle cx="962" cy="718" r="18" fill="#8798A7"/>
+
+  <text x="654" y="810" class="note">真正赚到钱的人，已经把两边的语言都学会了。</text>
+</svg>
