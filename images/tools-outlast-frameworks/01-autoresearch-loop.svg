@@ -1,0 +1,46 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="112" y1="48" x2="1172" y2="672" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081723"/>
+      <stop offset="0.5" stop-color="#10253A"/>
+      <stop offset="1" stop-color="#163749"/>
+    </linearGradient>
+    <linearGradient id="ring1" x1="454" y1="182" x2="826" y2="538" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#41DFC3"/>
+      <stop offset="1" stop-color="#7BE2FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" rx="28" fill="url(#bg1)"/>
+  <g opacity="0.14">
+    <path d="M0 112H1280M0 224H1280M0 336H1280M0 448H1280M0 560H1280" stroke="#A5D9EB"/>
+    <path d="M112 0V720M272 0V720M432 0V720M592 0V720M752 0V720M912 0V720M1072 0V720" stroke="#A5D9EB"/>
+  </g>
+  <text x="96" y="116" fill="#7FEBD5" font-family="IBM Plex Mono, Menlo, monospace" font-size="24">autoresearch / reusable loop</text>
+  <text x="96" y="188" fill="#FFFFFF" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="52" font-weight="700">630 行代码背后的，不是工具而是循环</text>
+  <text x="96" y="238" fill="#A7C5D7" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="26">改一个东西 → 打分 → 保留 / 回滚 → 再改下一个</text>
+  <circle cx="640" cy="392" r="170" fill="#091B29" stroke="#28556A" stroke-width="2"/>
+  <circle cx="640" cy="392" r="136" fill="none" stroke="url(#ring1)" stroke-width="20" stroke-linecap="round" stroke-dasharray="194 38 132 38 172 38"/>
+  <path d="M742 282L772 268L760 301" fill="#7BE2FF"/>
+  <path d="M760 492L788 509L756 520" fill="#7BE2FF"/>
+  <path d="M526 501L496 519L501 484" fill="#7BE2FF"/>
+  <path d="M508 291L481 272L514 262" fill="#7BE2FF"/>
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="600">
+    <rect x="561" y="190" width="158" height="58" rx="16" fill="#123148" stroke="#2D7084"/>
+    <text x="640" y="228" text-anchor="middle" fill="#E5F8F4" font-size="28">改一个东西</text>
+    <rect x="818" y="364" width="138" height="58" rx="16" fill="#123148" stroke="#2D7084"/>
+    <text x="887" y="402" text-anchor="middle" fill="#E5F8F4" font-size="28">持续打分</text>
+    <rect x="562" y="540" width="156" height="58" rx="16" fill="#123148" stroke="#2D7084"/>
+    <text x="640" y="578" text-anchor="middle" fill="#E5F8F4" font-size="28">决定保留</text>
+    <rect x="324" y="364" width="140" height="58" rx="16" fill="#123148" stroke="#2D7084"/>
+    <text x="394" y="402" text-anchor="middle" fill="#E5F8F4" font-size="28">低分回滚</text>
+  </g>
+  <circle cx="640" cy="392" r="72" fill="#0E2637" stroke="#6BE6D2" stroke-opacity="0.7"/>
+  <text x="640" y="387" text-anchor="middle" fill="#FFFFFF" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">循环</text>
+  <text x="640" y="425" text-anchor="middle" fill="#8DBCC6" font-family="IBM Plex Mono, Menlo, monospace" font-size="22">score-driven iteration</text>
+  <g>
+    <rect x="94" y="508" width="250" height="126" rx="22" fill="#0F2435" stroke="#2F637A"/>
+    <text x="126" y="558" fill="#D8EEF8" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="28" font-weight="600">可迁移的关键</text>
+    <text x="126" y="602" fill="#A4C4D7" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22">训练代码、广告文案、冷启动邮件、</text>
+    <text x="126" y="632" fill="#A4C4D7" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22">内容规则，都能套同一套框架</text>
+  </g>
+</svg>
