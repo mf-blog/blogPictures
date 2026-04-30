@@ -1,48 +1,74 @@
 <svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg3" x1="84" y1="48" x2="1178" y2="670" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg3" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
       <stop stop-color="#071825"/>
-      <stop offset="0.5" stop-color="#10263D"/>
-      <stop offset="1" stop-color="#153748"/>
+      <stop offset="0.5" stop-color="#0E2438"/>
+      <stop offset="1" stop-color="#142F43"/>
     </linearGradient>
-    <linearGradient id="pipe" x1="472" y1="248" x2="812" y2="500" gradientUnits="userSpaceOnUse">
+    <linearGradient id="pipe3" x1="440" y1="380" x2="840" y2="480" gradientUnits="userSpaceOnUse">
       <stop stop-color="#4BE0C6"/>
       <stop offset="1" stop-color="#7EE3FF"/>
     </linearGradient>
+    <filter id="gb3" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
   </defs>
+
   <rect width="1280" height="720" rx="28" fill="url(#bg3)"/>
-  <g opacity="0.14">
-    <path d="M0 120H1280M0 240H1280M0 360H1280M0 480H1280M0 600H1280" stroke="#A5D9EB"/>
-    <path d="M120 0V720M280 0V720M440 0V720M600 0V720M760 0V720M920 0V720M1080 0V720" stroke="#A5D9EB"/>
+
+  <!-- Grid -->
+  <g opacity="0.12" stroke="#A5D9EB">
+    <path d="M0 120H1280M0 240H1280M0 360H1280M0 480H1280M0 600H1280"/>
+    <path d="M120 0V720M280 0V720M440 0V720M600 0V720M760 0V720M920 0V720M1080 0V720"/>
   </g>
-  <text x="96" y="112" fill="#7FEBD5" font-family="IBM Plex Mono, Menlo, monospace" font-size="24">portable thinking</text>
-  <text x="96" y="180" fill="#FFFFFF" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="50" font-weight="700">新工具不断出现，但你只需要换接口</text>
-  <text x="96" y="228" fill="#A7C5D7" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="26">真正值钱的，是你已经拥有的判断框架</text>
-  <g>
-    <rect x="104" y="308" width="224" height="206" rx="26" fill="#10263A" stroke="#356882"/>
-    <text x="216" y="374" text-anchor="middle" fill="#E4F6F3" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">Claude Code</text>
-    <text x="216" y="422" text-anchor="middle" fill="#9FBDD0" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22">今天最顺手的工具</text>
-    <text x="216" y="462" text-anchor="middle" fill="#67D7FF" font-family="IBM Plex Mono, Menlo, monospace" font-size="20">tool A</text>
+
+  <!-- Glow -->
+  <g filter="url(#gb3)" opacity="0.18">
+    <circle cx="640" cy="400" r="160" fill="#41DFC3"/>
   </g>
-  <g>
-    <rect x="374" y="308" width="532" height="206" rx="30" fill="#0C1E2D" stroke="#48CBBE" stroke-width="2"/>
-    <rect x="408" y="340" width="464" height="46" rx="14" fill="#12334B"/>
-    <text x="640" y="371" text-anchor="middle" fill="#E9FBF7" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="26">拆解问题</text>
-    <rect x="408" y="396" width="464" height="46" rx="14" fill="#12334B"/>
-    <text x="640" y="427" text-anchor="middle" fill="#E9FBF7" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="26">设计迭代</text>
-    <rect x="408" y="452" width="464" height="46" rx="14" fill="#12334B"/>
-    <text x="640" y="483" text-anchor="middle" fill="#E9FBF7" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="26">验证假设</text>
-    <path d="M350 411H394" stroke="url(#pipe)" stroke-width="8" stroke-linecap="round"/>
-    <path d="M886 411H930" stroke="url(#pipe)" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Header -->
+  <text x="80" y="84" fill="#7FEBD5" font-family="IBM Plex Mono, Menlo, monospace" font-size="22">portable thinking</text>
+  <text x="80" y="156" fill="#FFFFFF" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="50" font-weight="700">新工具不断出现，但你只需要换接口</text>
+  <text x="80" y="208" fill="#A7C5D7" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26">真正值钱的，是你已经拥有的判断框架</text>
+  <rect x="80" y="228" width="60" height="4" rx="2" fill="#3FE3C9"/>
+
+  <!-- Tool A: Claude Code -->
+  <rect x="80" y="278" width="240" height="230" rx="26" fill="#0F2538" stroke="#316082" stroke-width="1.5"/>
+  <text x="200" y="344" text-anchor="middle" fill="#E4F6F3" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="32" font-weight="700">Claude Code</text>
+  <text x="200" y="390" text-anchor="middle" fill="#9FBDD0" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22">今天最顺手的工具</text>
+  <text x="200" y="462" text-anchor="middle" fill="#67D7FF" font-family="IBM Plex Mono, Menlo, monospace" font-size="20">tool A</text>
+
+  <!-- Connector left -->
+  <path d="M322 392H396" stroke="url(#pipe3)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M388 382L408 392L388 402" fill="#4BE0C6"/>
+
+  <!-- Framework center -->
+  <rect x="408" y="238" width="464" height="310" rx="30" fill="#091D2C" stroke="#3BBFC6" stroke-width="2"/>
+  <!-- Center glow -->
+  <g filter="url(#gb3)" opacity="0.12">
+    <circle cx="640" cy="393" r="100" fill="#4BE0C6"/>
   </g>
-  <g>
-    <rect x="952" y="308" width="224" height="206" rx="26" fill="#10263A" stroke="#356882"/>
-    <text x="1064" y="374" text-anchor="middle" fill="#E4F6F3" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">下一个工具</text>
-    <text x="1064" y="422" text-anchor="middle" fill="#9FBDD0" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22">明年冒出来的新入口</text>
-    <text x="1064" y="462" text-anchor="middle" fill="#67D7FF" font-family="IBM Plex Mono, Menlo, monospace" font-size="20">tool B</text>
-  </g>
-  <g>
-    <rect x="96" y="568" width="1088" height="86" rx="22" fill="#0F2435" stroke="#2E657D"/>
-    <text x="640" y="621" text-anchor="middle" fill="#D8EEF8" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="30" font-weight="600">有框架的人，不会被新工具吓到；他只是把新工具接进原来的流水线</text>
-  </g>
+  <text x="640" y="286" text-anchor="middle" fill="#7FEBD5" font-family="IBM Plex Mono, Menlo, monospace" font-size="18">framework · stays constant</text>
+  <rect x="442" y="304" width="396" height="52" rx="14" fill="#0F2E46" stroke="#2B6A7A"/>
+  <text x="640" y="338" text-anchor="middle" fill="#E9FBF7" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26" font-weight="600">拆解问题</text>
+  <rect x="442" y="368" width="396" height="52" rx="14" fill="#0F2E46" stroke="#2B6A7A"/>
+  <text x="640" y="402" text-anchor="middle" fill="#E9FBF7" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26" font-weight="600">设计迭代</text>
+  <rect x="442" y="432" width="396" height="52" rx="14" fill="#0F2E46" stroke="#2B6A7A"/>
+  <text x="640" y="466" text-anchor="middle" fill="#E9FBF7" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26" font-weight="600">验证假设</text>
+
+  <!-- Connector right -->
+  <path d="M872 392H946" stroke="url(#pipe3)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M938 382L958 392L938 402" fill="#4BE0C6"/>
+
+  <!-- Tool B: next tool -->
+  <rect x="960" y="278" width="240" height="230" rx="26" fill="#0F2538" stroke="#316082" stroke-width="1.5"/>
+  <text x="1080" y="344" text-anchor="middle" fill="#E4F6F3" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="32" font-weight="700">下一个工具</text>
+  <text x="1080" y="390" text-anchor="middle" fill="#9FBDD0" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22">明年冒出来的新入口</text>
+  <text x="1080" y="462" text-anchor="middle" fill="#67D7FF" font-family="IBM Plex Mono, Menlo, monospace" font-size="20">tool B</text>
+
+  <!-- Bottom banner -->
+  <rect x="80" y="612" width="1120" height="76" rx="22" fill="#0C2035" stroke="#255469"/>
+  <text x="640" y="658" text-anchor="middle" fill="#D4EAF5" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="28" font-weight="600">有框架的人，不会被新工具吓到</text>
+  <text x="640" y="692" text-anchor="middle" fill="#8FB8CA" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22">他只是把新工具接进原来的流水线，换了个接口而已</text>
 </svg>

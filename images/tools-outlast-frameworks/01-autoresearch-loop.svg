@@ -1,46 +1,72 @@
 <svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg1" x1="112" y1="48" x2="1172" y2="672" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#081723"/>
-      <stop offset="0.5" stop-color="#10253A"/>
-      <stop offset="1" stop-color="#163749"/>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071825"/>
+      <stop offset="0.5" stop-color="#0E2438"/>
+      <stop offset="1" stop-color="#142F43"/>
     </linearGradient>
-    <linearGradient id="ring1" x1="454" y1="182" x2="826" y2="538" gradientUnits="userSpaceOnUse">
+    <linearGradient id="ring1" x1="490" y1="230" x2="790" y2="530" gradientUnits="userSpaceOnUse">
       <stop stop-color="#41DFC3"/>
       <stop offset="1" stop-color="#7BE2FF"/>
     </linearGradient>
+    <filter id="gb1" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
   </defs>
+
   <rect width="1280" height="720" rx="28" fill="url(#bg1)"/>
-  <g opacity="0.14">
-    <path d="M0 112H1280M0 224H1280M0 336H1280M0 448H1280M0 560H1280" stroke="#A5D9EB"/>
-    <path d="M112 0V720M272 0V720M432 0V720M592 0V720M752 0V720M912 0V720M1072 0V720" stroke="#A5D9EB"/>
+
+  <!-- Grid -->
+  <g opacity="0.12" stroke="#A5D9EB">
+    <path d="M0 120H1280M0 240H1280M0 360H1280M0 480H1280M0 600H1280"/>
+    <path d="M120 0V720M280 0V720M440 0V720M600 0V720M760 0V720M920 0V720M1080 0V720"/>
   </g>
-  <text x="96" y="116" fill="#7FEBD5" font-family="IBM Plex Mono, Menlo, monospace" font-size="24">autoresearch / reusable loop</text>
-  <text x="96" y="188" fill="#FFFFFF" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="52" font-weight="700">630 行代码背后的，不是工具而是循环</text>
-  <text x="96" y="238" fill="#A7C5D7" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="26">改一个东西 → 打分 → 保留 / 回滚 → 再改下一个</text>
-  <circle cx="640" cy="392" r="170" fill="#091B29" stroke="#28556A" stroke-width="2"/>
-  <circle cx="640" cy="392" r="136" fill="none" stroke="url(#ring1)" stroke-width="20" stroke-linecap="round" stroke-dasharray="194 38 132 38 172 38"/>
-  <path d="M742 282L772 268L760 301" fill="#7BE2FF"/>
-  <path d="M760 492L788 509L756 520" fill="#7BE2FF"/>
-  <path d="M526 501L496 519L501 484" fill="#7BE2FF"/>
-  <path d="M508 291L481 272L514 262" fill="#7BE2FF"/>
-  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="600">
-    <rect x="561" y="190" width="158" height="58" rx="16" fill="#123148" stroke="#2D7084"/>
-    <text x="640" y="228" text-anchor="middle" fill="#E5F8F4" font-size="28">改一个东西</text>
-    <rect x="818" y="364" width="138" height="58" rx="16" fill="#123148" stroke="#2D7084"/>
-    <text x="887" y="402" text-anchor="middle" fill="#E5F8F4" font-size="28">持续打分</text>
-    <rect x="562" y="540" width="156" height="58" rx="16" fill="#123148" stroke="#2D7084"/>
-    <text x="640" y="578" text-anchor="middle" fill="#E5F8F4" font-size="28">决定保留</text>
-    <rect x="324" y="364" width="140" height="58" rx="16" fill="#123148" stroke="#2D7084"/>
-    <text x="394" y="402" text-anchor="middle" fill="#E5F8F4" font-size="28">低分回滚</text>
+
+  <!-- Glow -->
+  <g filter="url(#gb1)" opacity="0.2">
+    <circle cx="640" cy="400" r="200" fill="#3FE3C9"/>
   </g>
-  <circle cx="640" cy="392" r="72" fill="#0E2637" stroke="#6BE6D2" stroke-opacity="0.7"/>
-  <text x="640" y="387" text-anchor="middle" fill="#FFFFFF" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">循环</text>
-  <text x="640" y="425" text-anchor="middle" fill="#8DBCC6" font-family="IBM Plex Mono, Menlo, monospace" font-size="22">score-driven iteration</text>
-  <g>
-    <rect x="94" y="508" width="250" height="126" rx="22" fill="#0F2435" stroke="#2F637A"/>
-    <text x="126" y="558" fill="#D8EEF8" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="28" font-weight="600">可迁移的关键</text>
-    <text x="126" y="602" fill="#A4C4D7" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22">训练代码、广告文案、冷启动邮件、</text>
-    <text x="126" y="632" fill="#A4C4D7" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22">内容规则，都能套同一套框架</text>
+
+  <!-- Header -->
+  <text x="80" y="88" fill="#7FEBD5" font-family="IBM Plex Mono, Menlo, monospace" font-size="22">autoresearch / reusable loop</text>
+  <text x="80" y="158" fill="#FFFFFF" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="52" font-weight="700">630 行代码背后的，不是工具而是循环</text>
+  <text x="80" y="208" fill="#A7C5D7" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26">改一个东西 → 打分 → 高分保留 / 低分回滚 → 再改下一个</text>
+
+  <!-- Divider -->
+  <rect x="80" y="230" width="60" height="4" rx="2" fill="#3FE3C9"/>
+
+  <!-- Circle diagram, centered at 640, 420 -->
+  <circle cx="640" cy="420" r="175" fill="#071520" stroke="#20516A" stroke-width="1.5"/>
+  <circle cx="640" cy="420" r="140" fill="none" stroke="url(#ring1)" stroke-width="20" stroke-linecap="round"
+    stroke-dasharray="200 38 140 38 180 38"/>
+
+  <!-- Arrows -->
+  <path d="M740 298L768 284L757 316" fill="#7BE2FF"/>
+  <path d="M758 542L786 558L755 568" fill="#7BE2FF"/>
+  <path d="M528 552L502 570L500 535" fill="#7BE2FF"/>
+  <path d="M520 306L493 288L526 278" fill="#7BE2FF"/>
+
+  <!-- Step boxes -->
+  <g font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-weight="600" font-size="28">
+    <rect x="568" y="218" width="144" height="56" rx="16" fill="#0F2C3E" stroke="#2A6478"/>
+    <text x="640" y="256" text-anchor="middle" fill="#E5F8F2">改一个东西</text>
+
+    <rect x="830" y="392" width="130" height="56" rx="16" fill="#0F2C3E" stroke="#2A6478"/>
+    <text x="895" y="430" text-anchor="middle" fill="#E5F8F2">持续打分</text>
+
+    <rect x="568" y="570" width="144" height="56" rx="16" fill="#0F2C3E" stroke="#2A6478"/>
+    <text x="640" y="608" text-anchor="middle" fill="#E5F8F2">决定保留</text>
+
+    <rect x="320" y="392" width="130" height="56" rx="16" fill="#0F2C3E" stroke="#2A6478"/>
+    <text x="385" y="430" text-anchor="middle" fill="#E5F8F2">低分回滚</text>
   </g>
+
+  <!-- Center -->
+  <circle cx="640" cy="420" r="76" fill="#0A1E2D" stroke="#44D9C2" stroke-opacity="0.7" stroke-width="1.5"/>
+  <text x="640" y="414" text-anchor="middle" fill="#FFFFFF" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="36" font-weight="700">循环</text>
+  <text x="640" y="450" text-anchor="middle" fill="#5BBFCE" font-family="IBM Plex Mono, Menlo, monospace" font-size="18">score-driven</text>
+
+  <!-- Bottom callout -->
+  <rect x="80" y="650" width="1120" height="54" rx="18" fill="#0C2035" stroke="#255469"/>
+  <text x="640" y="684" text-anchor="middle" fill="#D4EAF5" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="24">可迁移的关键：训练代码、广告文案、冷启动邮件、内容规则，都能套同一套框架</text>
 </svg>
